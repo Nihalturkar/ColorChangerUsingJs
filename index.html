@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorChanger</title>
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .box{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .button{
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+        cursor: pointer;
+    }
+    #green{
+        background-color: green;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #red{
+        background-color: red;
+    }
+    #white{
+        background-color: white;
+    }
+
+</style>
+<body>
+    <h1>Color Changer theme</h1>
+   <div class="box">
+    <span class="button" id="green"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="red"></span>
+    <span class="button" id="white"></span>
+   </div>
+    <h3><i>Click the button and change the bg acc to button color...</i></h3>
+</body>
+<script src="script.js"></script>
+</html>
